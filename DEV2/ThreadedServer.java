@@ -27,7 +27,7 @@ public class ThreadedServer {
 				// sortir de la boucle 
 				break;
 			}
-			//creer un File avec la 2eme case du tableau qui fait reference à un nom de fichier ou le chemin d'un dossier
+			// initialiser name avec la 2eme case du tableau qui fait reference à un nom de fichier ou le chemin d'un dossier
 			name = new File(str[1]);
 				// verifier si le fichier ou le chemin du dossier exists
 				if (name.exists()) {
