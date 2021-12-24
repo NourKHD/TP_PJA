@@ -16,7 +16,6 @@ public class Client {
 			Socket socket = new Socket(serverAddress, 9090);
 			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
 			BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-			//System.out.println(input.readLine());
 			do {
 				do {
 					serverInput = input.readLine();
@@ -25,8 +24,6 @@ public class Client {
 				}while(serverInput==null);
 				a = sc.nextLine().toUpperCase();
 				out.println(a);
-				//String serverInput = input.readLine();
-				//System.out.println(serverInput);
 				 
 			} while (!a.equals("QUIT"));
 			
